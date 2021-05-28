@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strsub.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ldutriez <ldutriez@student.42.fr>          +#+  +:+       +#+        */
+/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/04 15:55:01 by ncoudsi           #+#    #+#             */
-/*   Updated: 2021/05/27 17:33:15 by ldutriez         ###   ########.fr       */
+/*   Updated: 2021/05/28 04:01:46 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strsub(char *src, size_t start, size_t len)
 
 	index = 0;
 	result = NULL;
-	if (src == NULL || len == 0 || start + len > ft_strlen(src) )
+	if (src == NULL || len == 0 || start + len > ft_strlen(src))
 		return (NULL);
 	result = ft_strnew(len);
 	if (result == NULL)

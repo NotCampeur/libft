@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fp.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ldutriez <ldutriez@student.42.fr>          +#+  +:+       +#+        */
+/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/08 14:54:08 by ncoudsi           #+#    #+#             */
-/*   Updated: 2021/05/27 17:43:49 by ldutriez         ###   ########.fr       */
+/*   Updated: 2021/05/28 03:57:01 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ static	int	file_create(char *path)
 	return (fd);
 }
 
-void		ft_putnbr_fp(char *path, int nb, char *mode)
+void	ft_putnbr_fp(char *path, int nb, char *mode)
 {
 	int	fd;
 

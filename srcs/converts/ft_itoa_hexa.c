@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa_hexa.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ldutriez <ldutriez@student.42.fr>          +#+  +:+       +#+        */
+/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/03 16:33:24 by ncoudsi           #+#    #+#             */
-/*   Updated: 2021/05/27 17:25:13 by ldutriez         ###   ########.fr       */
+/*   Updated: 2021/05/28 03:53:18 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft_converts.h"
 
-char		*ft_itoa_hexa(long long int nbr)
+char	*ft_itoa_hexa(long long int nbr)
 {
 	char	*base;
 	char	*result;

@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_int_abs.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ldutriez <ldutriez@student.42.fr>          +#+  +:+       +#+        */
+/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/02 09:00:01 by ldutriez          #+#    #+#             */
-/*   Updated: 2021/05/27 17:25:03 by ldutriez         ###   ########.fr       */
+/*   Updated: 2021/05/28 03:53:29 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft_converts.h"
 
-int		ft_int_abs(int value)
+int	ft_int_abs(int value)
 {
 	if (value == 0)
 		return (0);

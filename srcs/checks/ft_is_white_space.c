@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_is_white_space.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ldutriez <ldutriez@student.42.fr>          +#+  +:+       +#+        */
+/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 12:14:14 by ldutriez          #+#    #+#             */
-/*   Updated: 2021/05/27 17:35:44 by ldutriez         ###   ########.fr       */
+/*   Updated: 2021/05/28 03:52:27 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 t_bool	ft_is_white_space(char c)
 {
-	if (c == '\t' || c == '\v' || c == '\n' || c == '\r' ||
-	c == '\f' || c == ' ')
+	if (c == '\t' || c == '\v' || c == '\n' || c == '\r'
+		|| c == '\f' || c == ' ')
 		return (b_true);
 	return (b_false);
 }

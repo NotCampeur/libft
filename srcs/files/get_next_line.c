@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ldutriez <ldutriez@student.42.fr>          +#+  +:+       +#+        */
+/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/05 10:59:27 by ldutriez          #+#    #+#             */
-/*   Updated: 2021/05/27 17:45:16 by ldutriez         ###   ########.fr       */
+/*   Updated: 2021/05/28 03:54:28 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ static void	remove_line(char **storage)
 	tmp = *storage;
 	while (tmp[index] != '\0' && tmp[index] != '\n')
 		index++;
-	new_len = ft_strlen(tmp) - index -1;
+	new_len = ft_strlen(tmp) - index - 1;
 	if (new_len <= 0)
 		*storage = NULL;
 	else
@@ -51,7 +51,7 @@ static void	remove_line(char **storage)
 	free(tmp);
 }
 
-int			get_next_line(int fd, char **line)
+int	get_next_line(int fd, char **line)
 {
 	static char	*storage = NULL;
 	char		*buffer;
@@ -63,8 +63,8 @@ int			get_next_line(int fd, char **line)
 	buffer = ft_strnew(BUFFER_SIZE);
 	if (buffer == NULL)
 		return (IS_AN_ERROR);
-	while (ft_is_charset_in_str(storage, "\n") == b_false &&
-	read_return != IS_END_OF_FILE)
+	while (ft_is_charset_in_str(storage, "\n") == b_false
+		&& read_return != IS_END_OF_FILE)
 	{
 		read_return = read(fd, buffer, BUFFER_SIZE);
 		if (read_return == IS_AN_ERROR)

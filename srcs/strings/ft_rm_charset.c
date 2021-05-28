@@ -3,20 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   ft_rm_charset.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ldutriez <ldutriez@student.42.fr>          +#+  +:+       +#+        */
+/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 18:59:06 by ldutriez          #+#    #+#             */
-/*   Updated: 2021/05/27 17:38:31 by ldutriez         ###   ########.fr       */
+/*   Updated: 2021/05/28 04:00:34 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft_strings.h"
 #include "libft_checks.h"
 
-static int		len_without_charset(char *str, char *charset)
+/*
+**	Counting the lenght of the string without the characters of
+**	the charset and returning it.
+*/
+static int	len_without_charset(char *str, char *charset)
 {
-	int result;
-	int index;
+	int	result;
+	int	index;
 
 	result = 0;
 	index = 0;
@@ -31,12 +35,7 @@ static int		len_without_charset(char *str, char *charset)
 	return (result);
 }
 
-/*
-**	Removing all characters of a charset of a string and returning
-**	the cleaned string.
-*/
-
-char			*ft_rm_charset(char *str, char *charset)
+char	*ft_rm_charset(char *str, char *charset)
 {
 	char	*result;
 	int		index;

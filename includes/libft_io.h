@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft_io.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ldutriez <ldutriez@student.42.fr>          +#+  +:+       +#+        */
+/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/27 16:30:53 by ldutriez          #+#    #+#             */
-/*   Updated: 2021/05/27 17:42:58 by ldutriez         ###   ########.fr       */
+/*   Updated: 2021/05/28 03:56:24 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 /*
 **	Needed for size_t
 */
-#include <stddef.h>
+# include <stddef.h>
 
 /*
 **	Needed to use file related functions | syscall
@@ -29,7 +29,7 @@
 /*
 **	Needed by almost every functions
 */
-#include "libft_strings.h"
+# include "libft_strings.h"
 
 /*
 **	Printing a character.
@@ -95,7 +95,10 @@ void			ft_print_str_tab(char *name, char **tab);
 void			ft_print_str_tab_fd(int fd, char *name, char **tab);
 
 /*
-**	Prtining the actual array.
+**	Printing a 2 dimensions characters array in a file. The actual file is
+**	defined with a path rathe than a file descriptor. Note that user can
+**	choose 3 modes to open the file (OVERWRITE, APPEND, CREATE). User also can
+**	define a name for the array. Otherwise, set NULL as the second parameter.
 */
 void			ft_print_str_tab_fp(char *path,
 					char *name, char **tab, char *mode);

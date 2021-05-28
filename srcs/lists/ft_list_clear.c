@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_list_nodeclear.c                                      :+:      :+:    :+:   */
+/*   ft_list_clear.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tguilbar <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/08 12:47:03 by tguilbar          #+#    #+#             */
-/*   Updated: 2020/02/25 11:13:35 by ncoudsi          ###   ########.fr       */
+/*   Created: 2021/05/28 03:58:39 by user42            #+#    #+#             */
+/*   Updated: 2021/05/28 03:58:51 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_list_clear(t_list_node **list, void (*destructor)(void*))
 {
-	t_list_node *tmp;
+	t_list_node	*tmp;
 
 	if (*list == NULL)
 		return ;

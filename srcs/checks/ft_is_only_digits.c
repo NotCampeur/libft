@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_is_only_digits.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ldutriez <ldutriez@student.42.fr>          +#+  +:+       +#+        */
+/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/17 14:44:35 by ncoudsi           #+#    #+#             */
-/*   Updated: 2021/05/27 17:35:44 by ldutriez         ###   ########.fr       */
+/*   Updated: 2021/05/28 03:52:06 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 t_bool	ft_is_only_digits(char *str)
 {
-	size_t index;
+	size_t	index;
 
 	index = 0;
 	if (str == NULL)

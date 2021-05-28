@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_str_add_prefixe.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ldutriez <ldutriez@student.42.fr>          +#+  +:+       +#+        */
+/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/11 11:02:39 by ncoudsi           #+#    #+#             */
-/*   Updated: 2021/05/27 17:33:15 by ldutriez         ###   ########.fr       */
+/*   Updated: 2021/05/28 04:01:24 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft_strings.h"
 
-void		ft_str_add_prefixe(char *prefixe, char **str)
+void	ft_str_add_prefixe(char *prefixe, char **str)
 {
 	char	*tmp;
 

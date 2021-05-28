@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ldutriez <ldutriez@student.42.fr>          +#+  +:+       +#+        */
+/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/10 10:57:07 by ncoudsi           #+#    #+#             */
-/*   Updated: 2021/05/27 17:38:49 by ldutriez         ###   ########.fr       */
+/*   Updated: 2021/05/28 04:03:31 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@
 
 static size_t	word_count(char *src, char sep)
 {
-	size_t index;
-	size_t result;
+	size_t	index;
+	size_t	result;
 
 	index = 0;
 	result = 0;
@@ -42,7 +42,7 @@ static size_t	word_count(char *src, char sep)
 **	In case of error, free everything.
 */
 
-static void		clear(char **tab, int tab_index)
+static void	clear(char **tab, int tab_index)
 {
 	while (tab_index >= 0)
 	{
@@ -71,11 +71,11 @@ static size_t	word_len(char *src, char sep)
 **	Filling the char ** containing the splitted strings.
 */
 
-static void		fill_tab(char **tab, char *src,
+static void	fill_tab(char **tab, char *src,
 				char sep, size_t tab_size)
 {
-	size_t index;
-	size_t tab_index;
+	size_t	index;
+	size_t	tab_index;
 
 	index = 0;
 	tab_index = 0;
@@ -86,7 +86,7 @@ static void		fill_tab(char **tab, char *src,
 		if (src[index] != '\0')
 		{
 			tab[tab_index] = ft_strsub(src, index,
-			word_len(src + index, sep));
+					word_len(src + index, sep));
 			if (tab[tab_index] == NULL)
 			{
 				clear(tab, tab_index);
@@ -100,7 +100,7 @@ static void		fill_tab(char **tab, char *src,
 	tab[tab_index] = NULL;
 }
 
-char			**ft_split(char *src, char sep)
+char	**ft_split(char *src, char sep)
 {
 	size_t	tab_size;
 	char	**result;

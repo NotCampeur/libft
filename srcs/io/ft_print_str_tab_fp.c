@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_str_tab_fp.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ldutriez <ldutriez@student.42.fr>          +#+  +:+       +#+        */
+/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/08 14:49:30 by ncoudsi           #+#    #+#             */
-/*   Updated: 2021/05/27 17:46:28 by ldutriez         ###   ########.fr       */
+/*   Updated: 2021/05/28 03:56:20 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,9 @@ static int	file_create(char *path)
 	return (fd);
 }
 
+/*
+**	Printing the actual array.
+*/
 static void	print_tab(int fd, char *name, char **tab)
 {
 	size_t	index;
@@ -64,14 +67,7 @@ static void	print_tab(int fd, char *name, char **tab)
 	ft_putstr_fd(fd, "-----===-----\n");
 }
 
-/*
-**	Printing a 2 dimensions characters array in a file. The actual file is
-**	defined with a path rathe than a file descriptor. Note that user can
-**	choose 3 modes to open the file (OVERWRITE, APPEND, CREATE). User also can
-**	define a name for the array. Otherwise, set NULL as the second parameter.
-*/
-
-void		ft_print_str_tab_fp(char *path,
+void	ft_print_str_tab_fp(char *path,
 			char *name, char **tab, char *mode)
 {
 	int	fd;

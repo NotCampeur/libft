@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft_converts.h                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ldutriez <ldutriez@student.42.fr>          +#+  +:+       +#+        */
+/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/27 16:29:47 by ldutriez          #+#    #+#             */
-/*   Updated: 2021/05/27 17:21:33 by ldutriez         ###   ########.fr       */
+/*   Updated: 2021/05/28 03:50:17 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 /*
 **	Needed for size_t
 */
-#include <stddef.h>
+# include <stddef.h>
 
 /*
 **	Rounding up a floating point value.

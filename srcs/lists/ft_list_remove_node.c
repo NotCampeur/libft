@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_list_node_rmone.c                                     :+:      :+:    :+:   */
+/*   ft_list_remove_node.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tguilbar <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/25 09:51:44 by tguilbar          #+#    #+#             */
-/*   Updated: 2020/02/25 11:57:27 by tguilbar         ###   ########.fr       */
+/*   Created: 2021/05/28 03:58:04 by user42            #+#    #+#             */
+/*   Updated: 2021/05/28 03:58:15 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,8 @@ static void	deleting(t_list_node *to_remove, void(*destructor)(void *))
 void	ft_list_remove_node(t_list_node **list, size_t node_index,
 		void (*destructor)(void*))
 {
-	t_list_node *tmp1;
-	t_list_node *tmp2;
+	t_list_node	*tmp1;
+	t_list_node	*tmp2;
 
 	if (list == NULL || *list == NULL)
 		return ;

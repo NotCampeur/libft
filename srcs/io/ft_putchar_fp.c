@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar_fp.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ldutriez <ldutriez@student.42.fr>          +#+  +:+       +#+        */
+/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/08 15:03:39 by ncoudsi           #+#    #+#             */
-/*   Updated: 2021/05/27 17:41:27 by ldutriez         ###   ########.fr       */
+/*   Updated: 2021/05/28 03:56:44 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ static int	file_create(char *path)
 	return (fd);
 }
 
-void		ft_putchar_fp(char *path, char c, char *mode)
+void	ft_putchar_fp(char *path, char c, char *mode)
 {
 	int	fd;
 

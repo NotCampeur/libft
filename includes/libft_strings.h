@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft_strings.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ldutriez <ldutriez@student.42.fr>          +#+  +:+       +#+        */
+/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/27 16:25:02 by ldutriez          #+#    #+#             */
-/*   Updated: 2021/05/27 17:01:11 by ldutriez         ###   ########.fr       */
+/*   Updated: 2021/05/28 04:00:37 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,8 +95,8 @@ int				ft_str_count_c(char *str, char c);
 char			*ft_strnstr(char *haystack, char *needle, size_t len);
 
 /*
-**	Counting the lenght of the string without the characters of
-**	the charset and returning it.
+**	Removing all characters of a charset of a string and returning
+**	the cleaned string.
 */
 char			*ft_rm_charset(char *str, char *charset);
 

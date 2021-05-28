@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_is_charset_in_str.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ldutriez <ldutriez@student.42.fr>          +#+  +:+       +#+        */
+/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/04 15:14:11 by ncoudsi           #+#    #+#             */
-/*   Updated: 2021/05/27 17:35:44 by ldutriez         ###   ########.fr       */
+/*   Updated: 2021/05/28 03:51:36 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ static t_bool	is_in_charset(char to_find, char *charset)
 	return (b_false);
 }
 
-t_bool			ft_is_charset_in_str(char *str, char *to_find)
+t_bool	ft_is_charset_in_str(char *str, char *to_find)
 {
 	size_t	index;
 

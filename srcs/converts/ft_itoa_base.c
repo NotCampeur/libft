@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa_base.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ldutriez <ldutriez@student.42.fr>          +#+  +:+       +#+        */
+/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/30 11:49:49 by tguilbar          #+#    #+#             */
-/*   Updated: 2021/05/27 17:23:53 by ldutriez         ###   ########.fr       */
+/*   Updated: 2021/05/28 03:52:53 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ static size_t	ft_nbrlen(long long int nbr, size_t base_len)
 	return (result);
 }
 
-char			*ft_itoa_base(long long int nbr, char *base)
+char	*ft_itoa_base(long long int nbr, char *base)
 {
 	size_t					base_len;
 	size_t					nbr_len;

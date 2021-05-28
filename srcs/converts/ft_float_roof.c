@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_float_roof.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ldutriez <ldutriez@student.42.fr>          +#+  +:+       +#+        */
+/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/30 13:11:18 by ldutriez          #+#    #+#             */
-/*   Updated: 2021/05/27 17:24:55 by ldutriez         ###   ########.fr       */
+/*   Updated: 2021/05/28 03:53:12 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft_converts.h"
 
-float		ft_float_roof(float value)
+float	ft_float_roof(float value)
 {
 	float	result;
 	int		int_value;

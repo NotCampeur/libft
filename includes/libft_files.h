@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft_files.h                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ldutriez <ldutriez@student.42.fr>          +#+  +:+       +#+        */
+/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/27 16:16:15 by ldutriez          #+#    #+#             */
-/*   Updated: 2021/05/27 17:44:35 by ldutriez         ###   ########.fr       */
+/*   Updated: 2021/05/28 03:49:56 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@
 /*
 **	Needed by almost every functions
 */
-#include "libft_strings.h"
+# include "libft_strings.h"
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 100

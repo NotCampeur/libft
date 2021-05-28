@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ldutriez <ldutriez@student.42.fr>          +#+  +:+       +#+        */
+/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/27 12:29:15 by ldutriez          #+#    #+#             */
-/*   Updated: 2021/05/27 17:33:15 by ldutriez         ###   ########.fr       */
+/*   Updated: 2021/05/28 04:01:19 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,9 @@ char	*ft_strstr(char *haystack, char *needle)
 		needle_index = 0;
 		if (needle[needle_index] == haystack[haystack_index])
 		{
-			while (needle[needle_index] != '\0' &&
-				haystack[haystack_index + needle_index] ==
-				needle[needle_index])
+			while (needle[needle_index] != '\0'
+				&& haystack[haystack_index + needle_index]
+				== needle[needle_index])
 				needle_index++;
 			if (needle[needle_index] == '\0')
 				return (haystack + haystack_index);
