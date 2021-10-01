@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ldutriez <ldutriez@student.42.fr>          +#+  +:+       +#+         #
+#    By: notcampeur <notcampeur@student.42.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/09 17:28:34 by ldutriez          #+#    #+#              #
-#    Updated: 2020/09/29 14:31:41 by ldutriez         ###   ########.fr        #
+#    Updated: 2021/10/01 12:26:30 by notcampeur       ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,6 +15,8 @@ NAME=libft.a
 CC=gcc
 
 CFLAGS=-Wall -Wextra -Werror
+
+IFLAGS=-Iincludes
 
 RM=rm -rf
 
@@ -34,31 +36,35 @@ ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
 OBJ_DIR = objs
 
 OBJ=$(addprefix $(OBJ_DIR)/, $(SRC:.c=.o))
+OBJBONUS=$(OBJ)
+OBJBONUS+=$(addprefix $(OBJ_DIR)/, $(SRCBONUS:.c=.o))
 
 $(OBJ_DIR)/%.o : %.c
 			@mkdir -p $(OBJ_DIR)
-			$(CC) $(CFLAGS) -o $@ -c $<
+			$(CC) $(CFLAGS) $(IFLAGS) -o $@ -c $<
 
-OBJBONUS=$(addprefix $(OBJ_DIR)/, $(SRCBONUS:.c=.o))
-
-$(NAME): includes/libft.h $(SRC) $(OBJ)
-	$(CC) $(CFLAGS) -c $(SRC)
-	ar rc $(NAME) $(OBJ)
-	ranlib $(NAME)
+$(NAME):		$(OBJ)
+				ar rc $(NAME) $(OBJ)
+				ranlib $(NAME)
 
 all: $(NAME)
 
-bonus: $(NAME) $(SRCBONUS) $(OBJBONUS)
-	$(CC) $(CFLAGS) -c $(SRCBONUS)
-	ar rc $(NAME) $(OBJBONUS)
-	ranlib $(NAME)
+.libft_bonus: 		$(OBJBONUS)
+				ar rc $(NAME) $^
+				ranlib $(NAME)
+				touch .libft_bonus
+
+bonus: .libft_bonus
+
+debug: $(NAME) debug.c
+	$(CC) $(CFLAGS) $(IFLAGS) -o debug debug.c libft.a
 
 clean:
-	$(RM) $(OBJ_DIR) $(OBJ) $(OBJBONUS)
+	$(RM) $(OBJ_DIR)
 
 fclean: clean
-	$(RM) $(NAME)
+	$(RM) $(NAME) .libft_bonus debug
 
 re: clean fclean all bonus
 
-.PHONY: clean fclean
+.PHONY: all bonus clean fclean re

@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
+/*   debug.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: notcampeur <notcampeur@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/17 12:37:51 by ldutriez          #+#    #+#             */
-/*   Updated: 2021/10/01 12:28:00 by notcampeur       ###   ########.fr       */
+/*   Created: 2021/10/01 11:41:43 by notcampeur        #+#    #+#             */
+/*   Updated: 2021/10/01 11:52:57 by notcampeur       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd_front(t_list **alst, t_list *new)
+int	main(void)
 {
-	(new)->next = *alst;
-	*alst = new;
+	ft_putstr_fd("Test of putstr_fd\n", 1);
+	return (EXIT_SUCCESS);
 }

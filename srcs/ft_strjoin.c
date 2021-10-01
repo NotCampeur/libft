@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ldutriez <ldutriez@student.42.fr>          +#+  +:+       +#+        */
+/*   By: notcampeur <notcampeur@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/10 10:10:56 by ldutriez          #+#    #+#             */
-/*   Updated: 2020/02/24 14:25:27 by ldutriez         ###   ########.fr       */
+/*   Updated: 2021/10/01 12:28:00 by notcampeur       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include "libft.h"
 
 static char	*ft_treatment(char const *s1, char const *s2, char *new_s)
 {
