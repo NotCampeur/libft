@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_is_charset_in_str.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
+/*   By: notcampeur <notcampeur@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/04 15:14:11 by ncoudsi           #+#    #+#             */
-/*   Updated: 2021/05/28 03:51:36 by user42           ###   ########.fr       */
+/*   Updated: 2021/10/04 15:16:38 by notcampeur       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ t_bool	ft_is_charset_in_str(char *str, char *to_find)
 	size_t	index;
 
 	index = 0;
-	if (str == NULL || to_find == '\0')
+	if (str == NULL || to_find == NULL)
 		return (0);
 	while (str[index] != '\0')
 	{
