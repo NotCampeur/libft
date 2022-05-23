@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_list_remove_node.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
+/*   By: ldutriez <ldutriez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/28 03:58:04 by user42            #+#    #+#             */
-/*   Updated: 2021/05/28 03:58:15 by user42           ###   ########.fr       */
+/*   Updated: 2022/05/23 12:52:52 by ldutriez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 **	Removing a node and its content.
 */
 
-static void	deleting(t_list_node *to_remove, void(*destructor)(void *))
+static void	deleting(t_list_node *to_remove, void (*destructor)(void *))
 {
 	if (to_remove == NULL)
 		return ;
