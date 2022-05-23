@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft_strings.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
+/*   By: ldutriez <ldutriez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/27 16:25:02 by ldutriez          #+#    #+#             */
-/*   Updated: 2021/05/28 04:00:37 by user42           ###   ########.fr       */
+/*   Updated: 2022/05/23 12:51:56 by ldutriez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,5 +99,11 @@ char			*ft_strnstr(char *haystack, char *needle, size_t len);
 **	the cleaned string.
 */
 char			*ft_rm_charset(char *str, char *charset);
+
+/*
+**	The bzero() function erases the data in the n bytes of the memory
+**	starting at the location pointed to by addr, by writing zeros to that area.
+*/
+void			ft_bzero(void *addr, size_t n);
 
 #endif
