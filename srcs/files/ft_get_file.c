@@ -6,7 +6,7 @@
 /*   By: ldutriez <ldutriez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/12 14:34:11 by ncoudsi           #+#    #+#             */
-/*   Updated: 2022/05/26 17:44:34 by ldutriez         ###   ########.fr       */
+/*   Updated: 2022/05/26 19:52:40 by ldutriez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ char	**ft_get_file(char *path)
 			line = ft_strdup("");
 		ft_add_to_tab((void *)line, (void ***)&result);
 	}
+	if (line == NULL)
+		line = ft_strdup("");
 	ft_add_to_tab((void *)line, (void ***)&result);
 	close(fd);
 	return (result);
@@ -55,6 +57,8 @@ t_d_list	ft_get_file_in_list(char *path)
 			line = ft_strdup("");
 		ft_d_list_add_back(&result, ft_malloc_d_node((void *)line));
 	}
+	if (line == NULL)
+		line = ft_strdup("");
 	ft_d_list_add_back(&result, ft_malloc_d_node((void *)line));
 	close(fd);
 	return (result);
