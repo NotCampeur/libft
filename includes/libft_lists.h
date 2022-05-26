@@ -6,7 +6,7 @@
 /*   By: ldutriez <ldutriez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/27 16:14:06 by ldutriez          #+#    #+#             */
-/*   Updated: 2021/05/27 17:49:25 by ldutriez         ###   ########.fr       */
+/*   Updated: 2022/05/26 15:32:24 by ldutriez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,29 @@ typedef struct s_list_node
 }						t_list_node;
 
 /*
+**	The t_list is a pointer to the first t_list_node of a linked lists.
+*/
+typedef t_list_node *	t_list;
+
+/*
+**	The t_d_list_node is a data structure with a void pointer in it.
+**	The second variable is a pointer to the next t_d_list_node.
+**	The third variable is a pointer to the previous t_d_list_node.
+**	Both the first and the last t_d_list_node are NULL.
+*/
+typedef struct s_d_list_node
+{
+	void				*data;
+	struct s_list_node	*next;
+	struct s_list_node	*prev;
+}						t_d_list_node;
+
+/*
+**	The t_d_list is a pointer to the first t_d_list_node of a double linked lists.
+*/
+typedef t_d_list_node *	t_d_list;
+
+/*
 **	Allocating memory for a t_list_node pointer and filling it with data.
 **	Then returns the t_list_node pointer.
 */
@@ -48,8 +71,8 @@ void				ft_list_add_back(t_list_node **list, t_list_node *node);
 void				ft_list_add_front(t_list_node **list, t_list_node *node);
 
 /*
-**	Adding a node at the end of a linked list. See libft_list_node.h for further
-**	informations on t_list_node structure.
+**	Completely erase each node.
+**	The deletion of the data is handled by the second argument.
 */
 void				ft_list_clear(t_list_node **list,
 						void (*destructor)(void*));
