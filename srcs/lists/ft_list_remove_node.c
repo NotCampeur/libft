@@ -6,7 +6,7 @@
 /*   By: ldutriez <ldutriez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/28 03:58:04 by user42            #+#    #+#             */
-/*   Updated: 2022/05/26 17:26:28 by ldutriez         ###   ########.fr       */
+/*   Updated: 2022/05/26 17:29:16 by ldutriez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,7 +81,7 @@ void	ft_d_list_remove_node(t_d_list *list, size_t node_index,
 	if (node_index == 0)
 	{
 		*list = tmp2;
-		deleting(tmp1, destructor);
+		deleting_d(tmp1, destructor);
 		return ;
 	}
 	while (node_index > 1 && tmp1->next != NULL)
@@ -92,6 +92,6 @@ void	ft_d_list_remove_node(t_d_list *list, size_t node_index,
 	}
 	if (node_index > 1)
 		return ;
-	deleting(tmp2, destructor);
+	deleting_d(tmp2, destructor);
 	return ;
 }
