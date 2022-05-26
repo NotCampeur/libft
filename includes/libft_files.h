@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft_files.h                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
+/*   By: ldutriez <ldutriez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/27 16:16:15 by ldutriez          #+#    #+#             */
-/*   Updated: 2021/05/28 03:49:56 by user42           ###   ########.fr       */
+/*   Updated: 2022/05/26 17:45:14 by ldutriez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,11 @@
 */
 # include "libft_strings.h"
 
+/*
+**	Needed by ft_get_file_in_list
+*/
+# include "libft_lists.h"
+
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 100
 # endif
@@ -53,5 +58,12 @@ int				get_next_line(int fd, char **line);
 **	and returning it. If the path to the file is incorrect, returning NULL.
 */
 char			**ft_get_file(char *path);
+
+/*
+**	Opening a file and getting its datas line by line.
+**	Storing it in a double linked list and returning it.
+**	If the path to the file is incorrect, returning NULL.
+*/
+t_d_list		ft_get_file_in_list(char *path);
 
 #endif
