@@ -6,7 +6,7 @@
 #    By: ldutriez <ldutriez@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/26 18:48:10 by ldutriez          #+#    #+#              #
-#    Updated: 2022/05/23 13:03:12 by ldutriez         ###   ########.fr        #
+#    Updated: 2022/05/31 20:26:53 by ldutriez         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,7 @@ SRC 	=		ft_float_abs.c ft_float_floor.c ft_float_roof.c ft_int_abs.c \
 				ft_strdup.c ft_strdup_c.c ft_strlen.c ft_strnew.c \
 				ft_strcpy.c ft_strsub.c ft_strstr.c ft_str_count_c.c ft_rm_charset.c\
 				ft_strjoin.c ft_split.c ft_str_add_prefixe.c ft_str_add_suffix.c \
-				ft_str_count_c.c ft_strnstr.c ft_bzero.c \
+				ft_str_count_c.c ft_strnstr.c ft_bzero.c ft_memset.c \
 				\
 				ft_is_only_digits.c ft_is_digit.c ft_strcmp.c ft_is_charset_in_str.c \
 				ft_is_alpha.c ft_is_lower.c ft_is_upper.c ft_is_alpha_num.c \

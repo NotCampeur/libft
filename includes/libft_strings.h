@@ -6,7 +6,7 @@
 /*   By: ldutriez <ldutriez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/27 16:25:02 by ldutriez          #+#    #+#             */
-/*   Updated: 2022/05/23 12:51:56 by ldutriez         ###   ########.fr       */
+/*   Updated: 2022/05/31 20:25:08 by ldutriez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,9 +101,15 @@ char			*ft_strnstr(char *haystack, char *needle, size_t len);
 char			*ft_rm_charset(char *str, char *charset);
 
 /*
-**	The bzero() function erases the data in the n bytes of the memory
+**	The ft_bzero() function erases the data in the n bytes of the memory
 **	starting at the location pointed to by addr, by writing zeros to that area.
 */
 void			ft_bzero(void *addr, size_t n);
+
+/*
+**	The ft_memset() function fills the first n bytes of the memory area
+**	pointed to by s with the constant byte c.
+*/
+void			*ft_memset(void *s, int c, size_t n);
 
 #endif
