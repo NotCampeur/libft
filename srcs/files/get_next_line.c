@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
+/*   By: ldutriez <ldutriez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/05 10:59:27 by ldutriez          #+#    #+#             */
-/*   Updated: 2021/05/28 03:54:28 by user42           ###   ########.fr       */
+/*   Updated: 2022/06/06 21:01:42 by ldutriez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,6 +69,7 @@ int	get_next_line(int fd, char **line)
 		read_return = read(fd, buffer, BUFFER_SIZE);
 		if (read_return == IS_AN_ERROR)
 			return (IS_AN_ERROR);
+		buffer[read_return] = '\0';
 		ft_str_add_suffix(&storage, buffer);
 	}
 	free(buffer);
